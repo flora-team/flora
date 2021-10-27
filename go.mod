@@ -1,4 +1,4 @@
-module github.com/Flora-team/flora
+module github.com/flora-team/flora
 
 go 1.17
 

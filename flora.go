@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/Flora-team/flora/cmd"
+	"github.com/flora-team/flora/cmd"
 )
 
 func main() {
