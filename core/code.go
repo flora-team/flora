@@ -9,9 +9,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Flora-team/flora/model"
-	"github.com/Flora-team/flora/templates"
-	"github.com/Flora-team/flora/utils"
+	"github.com/flora-team/flora/model"
+	"github.com/flora-team/flora/templates"
+	"github.com/flora-team/flora/utils"
 
 	"gopkg.in/yaml.v2"
 )

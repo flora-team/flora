@@ -6,7 +6,7 @@ import (
 	"os"
 	"path"
 
-	"github.com/Flora-team/flora/utils"
+	"github.com/flora-team/flora/utils"
 
 	"gopkg.in/yaml.v2"
 )

@@ -1,6 +1,6 @@
 # Flora
 
-[![GitHub release](https://img.shields.io/github/v/tag/flora-team/flora.svg?label=flora)](https://github.com/Flora-team/flora/releases)
+[![GitHub release](https://img.shields.io/github/v/tag/flora-team/flora.svg?label=flora)](https://github.com/flora-team/flora/releases)
 
 flora是一个用于web自动化测试中PO模式下元素管理的工具，支持以yaml配置文件的方式管理元素，并自动生成可直接执行的程序代码。
 
@@ -10,11 +10,13 @@ flora是一个用于web自动化测试中PO模式下元素管理的工具，支�
 
 ## 内容列表
 
-- [Flora](#Flora)
+- [Flora](#flora)
+  - [为什么使用flora?](#为什么使用flora)
+  - [内容列表](#内容列表)
   - [安装](#安装)
   - [使用说明](#使用说明)
     - [页面](#页面)
-    - [元素](元素)
+    - [元素](#元素)
     - [生成代码](#生成代码)
   - [示例](#示例)
   - [维护者](#维护者)
@@ -26,10 +28,10 @@ flora是一个用于web自动化测试中PO模式下元素管理的工具，支�
 这个项目使用 [golang](https://golang.org/) 。如果你本地安装了golang，可以直接执行命令安装:
 
 ```sh
-$ go install github.com/Flora-team/flora
+$ go install github.com/flora-team/flora
 ```
 
-否则，可以直接下载[可执行文件](https://github.com/Flora-team/flora/releases)。
+否则，可以直接下载[可执行文件](https://github.com/flora-team/flora/releases)。
 
 ## 使用说明
 ### 页面
@@ -111,7 +113,7 @@ functions: 此元素挂载的函数。函数可以有多个，每个函数可定
 ## 示例
 拉取代码:
 ```sh
-$ git clone https://github.com/Flora-team/flora-examples.git
+$ git clone https://github.com/flora-team/flora-examples.git
 ```
 
 java:
@@ -128,7 +130,7 @@ $ flora generate -l robot -p . -s baidu -o click="Wait And Click" -o setValue="W
 
 ## 如何贡献
 
-非常欢迎你的加入！[提一个 Issue](https://github.com/Flora-team/flora/issues/new) 或者提交一个 Pull Request。
+非常欢迎你的加入！[提一个 Issue](https://github.com/flora-team/flora/issues/new) 或者提交一个 Pull Request。
 
 
 ## 使用许可
