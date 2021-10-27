@@ -2,10 +2,11 @@ package model
 
 import (
 	"errors"
-	"flora/utils"
 	"fmt"
 	"os"
 	"path"
+
+	"github.com/Flora-team/flora-cli/utils"
 
 	"gopkg.in/yaml.v2"
 )

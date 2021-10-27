@@ -1,9 +1,10 @@
 package cmd
 
 import (
-	"flora/core"
-	"flora/utils"
 	"fmt"
+
+	"github.com/Flora-team/flora-cli/core"
+	"github.com/Flora-team/flora-cli/utils"
 
 	"github.com/spf13/cobra"
 )

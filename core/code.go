@@ -1,9 +1,6 @@
 package core
 
 import (
-	"flora/model"
-	"flora/templates"
-	"flora/utils"
 	"fmt"
 	"io/fs"
 	"io/ioutil"
@@ -11,6 +8,10 @@ import (
 	"path/filepath"
 	"strconv"
 	"strings"
+
+	"github.com/Flora-team/flora-cli/model"
+	"github.com/Flora-team/flora-cli/templates"
+	"github.com/Flora-team/flora-cli/utils"
 
 	"gopkg.in/yaml.v2"
 )

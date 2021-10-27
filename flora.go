@@ -1,7 +1,7 @@
 package main
 
 import (
-	"flora/cmd"
+	"github.com/Flora-team/flora-cli/cmd"
 )
 
 func main() {
