@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/Flora-team/flora-cli/model"
+	"github.com/Flora-team/flora/model"
 
 	"github.com/spf13/cobra"
 )

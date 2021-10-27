@@ -3,8 +3,8 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/Flora-team/flora-cli/core"
-	"github.com/Flora-team/flora-cli/utils"
+	"github.com/Flora-team/flora/core"
+	"github.com/Flora-team/flora/utils"
 
 	"github.com/spf13/cobra"
 )

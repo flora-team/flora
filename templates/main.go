@@ -1,10 +1,10 @@
 package templates
 
 import (
-	javaModels "github.com/Flora-team/flora-cli/templates/java/models"
+	javaModels "github.com/Flora-team/flora/templates/java/models"
 
-	javaPages "github.com/Flora-team/flora-cli/templates/java/pages"
-	robotPages "github.com/Flora-team/flora-cli/templates/robot/pages"
+	javaPages "github.com/Flora-team/flora/templates/java/pages"
+	robotPages "github.com/Flora-team/flora/templates/robot/pages"
 )
 
 func BasePageTmpl(language string) string {
