@@ -10,7 +10,7 @@ Wait And Click
     [Documentation]    用法同Click Element
     [Arguments]    ${locator}    ${timeout}=5s
     Wait Until Page Contains Element    ${locator}    ${timeout}     
-    ${count}    Get Element Count    ${locator}
+    ${count}    Selenium2Library.Get Element Count    ${locator}
     FOR    ${i}    IN RANGE    ${count}
         ${tlocator}    Set Variable    (${locator})[${i+1}]
         ${status}    Run Keyword And Return Status    Wait Until Element Is Visible    ${locator}    ${timeout}
@@ -58,4 +58,12 @@ Wait And Mouseover
         ${status}    Run Keyword And Return Status    Mouse Over    ${locator}
         Exit For Loop If    ${status}
     END
-    Run Keyword If    ${status}==${false}    Mouse Over    ${locator}  `
+    Run Keyword If    ${status}==${false}    Mouse Over    ${locator}
+    
+Wait And Drag
+    [Timeout]    1 minutes
+    [Documentation]    用法同Drag And Drop
+    [Arguments]    ${locator}    ${target}    ${timeout}=30s
+    Wait Until Page Contains Element    ${locator}    ${timeout}
+    Wait Until Page Contains Element    ${target}    ${timeout}   
+    Drag And Drop    ${locator}    ${target} `

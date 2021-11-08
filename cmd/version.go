@@ -15,6 +15,6 @@ var versionCmd = &cobra.Command{
 	Short: "Print the version number of Flora",
 	Long:  `All software has versions. This is Flora's`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("Flora v0.1.0")
+		fmt.Println("Flora v0.1.1")
 	},
 }
