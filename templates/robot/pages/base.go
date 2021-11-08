@@ -10,7 +10,7 @@ Wait And Click
     [Documentation]    用法同Click Element
     [Arguments]    ${locator}    ${timeout}=5s
     Wait Until Page Contains Element    ${locator}    ${timeout}     
-    ${count}    Get Element Count    ${locator}
+    ${count}    Selenium2Library.Get Element Count    ${locator}
     FOR    ${i}    IN RANGE    ${count}
         ${tlocator}    Set Variable    (${locator})[${i+1}]
         ${status}    Run Keyword And Return Status    Wait Until Element Is Visible    ${locator}    ${timeout}
