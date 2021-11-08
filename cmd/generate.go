@@ -56,7 +56,6 @@ func initConfig() {
 	// If a config file is found, read it in.
 	if err := viper.ReadInConfig(); err == nil {
 		fmt.Println("Using config file:", viper.ConfigFileUsed())
-		viper.BindPFlags(generateCmd.Flags())
 		// viper.BindPFlag("source", generateCmd.Flags().Lookup("source"))
 		// viper.BindPFlag("language", generateCmd.Flags().Lookup("language"))
 		// viper.BindPFlag("package", generateCmd.Flags().Lookup("package"))
@@ -64,8 +63,9 @@ func initConfig() {
 		// viper.BindPFlag("operation", generateCmd.Flags().Lookup("operation"))
 
 	} else {
-		fmt.Println(err.Error())
+		// fmt.Println(err.Error())
 	}
+	viper.BindPFlags(generateCmd.Flags())
 }
 
 var generateCmd = &cobra.Command{
@@ -78,8 +78,8 @@ var generateCmd = &cobra.Command{
 		target = viper.Get("target").(string)
 		packageName = viper.Get("package").(string)
 		operationTransfer := []string{}
-		for _, v := range viper.Get("operation").([]interface{}) {
-			operationTransfer = append(operationTransfer, v.(string))
+		for _, v := range viper.GetStringSlice("operation") {
+			operationTransfer = append(operationTransfer, v)
 		}
 
 		if !utils.IsContainString([]string{"java", "robot"}, language) {

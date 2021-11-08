@@ -110,7 +110,19 @@ functions: 此元素挂载的函数。函数可以有多个，每个函数可定
 
 --operation: 更改默认的函数行为。例如，元素的function的operation因为要输出java代码设定为click，需要改为输出robot时，可以使用 -o click="Click Element"来使其符合robot的代码。-o可以有多个，如 -o click="Click Element" -o setValue="Input Element"。
 
+除此之外，你可以在执行flora的目录下新建一个flora.config文件，将配置参数写入文件中，如:
+
+``` yaml
+language: java
+package: com.baidu.test
+target: pages
+source: baidu
+```
+
+之后，只需执行flora generate，程序会自动识别当前目录的flora配置。
+
 ## 示例
+
 拉取代码:
 ```sh
 $ git clone https://github.com/flora-team/flora-examples.git
@@ -118,11 +130,11 @@ $ git clone https://github.com/flora-team/flora-examples.git
 
 java:
 ```sh
-$ flora generate -l java -p com.baidu.test -s baidu
+$ flora generate --language java --package com.baidu.test --source baidu
 ```
 robot:
 ```sh
-$ flora generate -l robot -p . -s baidu -o click="Wait And Click" -o setValue="Wait And Input" -t robot
+$ flora generate --language robot --package . --source baidu --operation click="Wait And Click" -operation setValue="Wait And Input" --target robot
 ```
 ## 维护者
 
